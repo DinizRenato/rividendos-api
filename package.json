@@ -7,7 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/shared/infra/http/server.ts",
     "lint": "eslint . --ext .ts",
-    "lint-fix": "eslint . --ext .ts --fix"
+    "lint-fix": "eslint . --ext .ts --fix",
+    "typeorm:win": "ts-node -r tsconfig-paths/register node_modules\\typeorm\\cli.js",
+    "migration:generate:win": "npm run typeorm:win migration:create -- -n",
+    "typeorm-migration-run": "ts-node ./node_modules/typeorm/cli.js migration:run"
   },
   "keywords": [],
   "author": "",
