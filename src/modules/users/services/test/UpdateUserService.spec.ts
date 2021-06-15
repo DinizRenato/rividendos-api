@@ -124,20 +124,4 @@ describe('UpdateUser', () => {
       }),
     ).rejects.toBeInstanceOf(AppError);
   });
-
-  // it('should not be able to create two users with the same email', async () => {
-  //   await createUserService.execute({
-  //     name: 'Renato Diniz',
-  //     email: 'teste@email.com',
-  //     password: '123456',
-  //   });
-
-  //   expect(
-  //     createUserService.execute({
-  //       name: 'Renato Diniz',
-  //       email: 'teste@email.com',
-  //       password: '123456',
-  //     }),
-  //   ).rejects.toBeInstanceOf(AppError);
-  // });
 });
